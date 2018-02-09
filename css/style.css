@@ -10,3 +10,8 @@ body{
 .rp1, .rp2, .rp3{
     margin-top: 40px;
 }
+/*SỬA FOOTER*/
+footer.page-footer{
+	margin-top: 3px; 
+	background-color: #2e2e2e;
+}
