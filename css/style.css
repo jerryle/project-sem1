@@ -15,7 +15,10 @@ footer.page-footer{
 	margin-top: 3px; 
 }
 nav{
-	position: absolute;
-	top:100px; 
-	
+	position: relative;
+    bottom: 500px;
 }
+.navbar{
+    box-shadow: none;
+}
+
