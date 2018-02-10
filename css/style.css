@@ -2,6 +2,14 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/*Search-home*/
+.search-home-edit{
+    border: 1px solid  #bfbfbf;
+    border-radius: 2px 2px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.4);
+
+}
+/*Search-home*/
 
 /*SanPham*/
 .card-body{
@@ -10,6 +18,8 @@ body{
 .rp1, .rp2, .rp3{
     margin-top: 40px;
 }
+/*SanPham*/
+
 /*SỬA FOOTER*/
 footer.page-footer{
 	margin-top: 3px; 
@@ -20,5 +30,11 @@ nav{
 }
 .navbar{
     box-shadow: none;
+    /*chú ý: sau này Nam dùng thẻ nào có dính tới class="navbar" đều sẽ không còn box-shadow nữa.
+    có 2 cách giải quyết:
+    1. xóa box-shadow: none;  đi!
+    2. muốn shadow cái nào phải tự thêm shadow thủ công*/
 }
+/*SỬA FOOTER*/
+
 
