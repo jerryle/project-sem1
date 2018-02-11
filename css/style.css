@@ -18,6 +18,11 @@ body{
 .rp1, .rp2, .rp3{
     margin-top: 40px;
 }
+
+.title-head-box {
+    /* hoặc làm cách khác tùy ông */
+    text-transform: uppercase;
+}
 /*SanPham*/
 
 /*SỬA FOOTER*/
