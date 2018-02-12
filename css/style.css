@@ -2,6 +2,21 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/*Header*/
+div .edit-nav-home{
+    background-color: inherit;
+    box-shadow: none;
+    z-index: 2;
+
+}
+div .edit-nav-home a{
+    color: #ffffff;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 150px;
+}
+/*Header*/
+
 /*Search-home*/
 .search-home-edit{
     border: 1px solid  #bfbfbf;
@@ -42,19 +57,19 @@ body{
 /*SanPham*/
 
 /*SỬA FOOTER*/
-footer.page-footer{
-	margin-top: 3px; 
+footer div p{
+    margin: 10px 0 10px 0;
 }
-nav{
-	position: relative;
-    bottom: 500px;
+.social-btn-edit ul li a{
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.navbar{
-    box-shadow: none;
-    /*chú ý: sau này Nam dùng thẻ nào có dính tới class="navbar" đều sẽ không còn box-shadow nữa.
-    có 2 cách giải quyết:
-    1. xóa box-shadow: none;  đi!
-    2. muốn shadow cái nào phải tự thêm shadow thủ công*/
+.edit-hover-footer div a:hover{
+    color: #b7d5ca;
+}
+.edit-position{
+    position: relative;
+    top: -56px;
 }
 /*SỬA FOOTER*/
 
