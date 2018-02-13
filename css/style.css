@@ -3,24 +3,46 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 /*Header*/
+
+/*edit-navbar*/
 div .edit-nav-home{
     background-color: inherit;
     box-shadow: none;
     z-index: 1;
+}
 
-}
-.align-text-nav ul li a{
-    text-transform: uppercase;
-}
+/*edit text navbar*/
 div .edit-nav-home a{
     color: #ffffff;
+    font-weight: bold;
 }
+
+/*position-header*/
+.edit-position{
+    position: relative;
+    top: -62px;
+}
+
+/*edit menu*/
+.align-text-nav ul li a{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+    0 -5px 35px rgba(255,255,255,0.3);
+}
+
+/*border-bottom*/
 div .edit-nav-home ul a:hover{
     border-bottom: 1px solid#ffffff;
 }
+/*logo*/
 div .edit-nav-home .navbar-brand{
-    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+    0 -5px 35px rgba(255,255,255,0.3);
 }
+/*button - pev & next*/
 .carousel-control-next, .carousel-control-prev{
     width: 150px;
 }
@@ -76,10 +98,7 @@ footer div p{
 .edit-hover-footer div a:hover{
     color: #b7d5ca;
 }
-.edit-position{
-    position: relative;
-    top: -56px;
-}
+
 /*SỬA FOOTER*/
 
 
