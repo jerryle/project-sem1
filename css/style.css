@@ -6,11 +6,20 @@ body{
 div .edit-nav-home{
     background-color: inherit;
     box-shadow: none;
-    z-index: 2;
+    z-index: 1;
 
+}
+.align-text-nav ul li a{
+    text-transform: uppercase;
 }
 div .edit-nav-home a{
     color: #ffffff;
+}
+div .edit-nav-home ul a:hover{
+    border-bottom: 1px solid#ffffff;
+}
+div .edit-nav-home .navbar-brand{
+    font-weight: bold;
 }
 .carousel-control-next, .carousel-control-prev{
     width: 150px;
