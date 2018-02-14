@@ -35,7 +35,6 @@ nav{
 .align-text-nav ul li a{
     text-transform: uppercase;
     font-size: 16px;
-    color: rgba(0,0,0,0.6);
     text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
     -3px -3px 6px rgba(0,0,0,0.2),
     0 -5px 8px rgba(255,255,255,0.3),
@@ -59,20 +58,40 @@ div .edit-nav-home .navbar-brand{
     width: 150px;
 }
 .carousel-caption{
-    width: 1005px;
+    width: 960px;
 }
+
 .edit-up-text-banner{
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
+
 .carousel-caption h3{
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
 }
+
 .carousel-caption h3,.carousel-caption p{
     text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
     -3px -3px 6px rgba(0,0,0,0.2),
     0 -5px 8px rgba(255,255,255,0.3),
     0 4px 15px rgba(0,0,0,0.4);
+}
+
+.Azimut-66 span{
+    font-weight: normal;
+}
+
+.Azimut-al-51 p{
+    font-size: 20px;
+}
+
+.Azimut-43 p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.Azimut-S7 p{
+    font-style: italic;
 }
 /*Header*/
 
@@ -125,7 +144,7 @@ div .sale-of-color{
 
 /*SanPham*/
 
-/*SỬA FOOTER*/
+/*FOOTER*/
 footer div p{
     margin: 10px 0 10px 0;
 }
@@ -140,6 +159,13 @@ footer div p{
     font-size: 14px;
 }
 
-/*SỬA FOOTER*/
+.edit-color-footer{
+    background-color: #171717;
+}
+.edit-developed p{
+    font-size: 14px;
+}
+
+/*FOOTER*/
 
 
