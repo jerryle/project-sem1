@@ -20,7 +20,15 @@ div .edit-nav-home a{
 /*position-header*/
 .edit-position{
     position: relative;
-    top: -62px;
+    top: -82px;
+}
+nav{
+    margin-top: 20px;
+    /*chỉnh margin,padding nav cần chỉnh theo background*/
+}
+.miniature-banner img{
+    background-repeat: no-repeat;
+    height: 75vh;
 }
 
 /*edit menu*/
@@ -28,8 +36,10 @@ div .edit-nav-home a{
     text-transform: uppercase;
     font-size: 16px;
     color: rgba(0,0,0,0.6);
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-    0 -5px 35px rgba(255,255,255,0.3);
+    text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
+    -3px -3px 6px rgba(0,0,0,0.2),
+    0 -5px 8px rgba(255,255,255,0.3),
+    0 4px 15px rgba(0,0,0,0.4);
 }
 
 /*border-bottom*/
@@ -39,12 +49,30 @@ div .edit-nav-home ul a:hover{
 /*logo*/
 div .edit-nav-home .navbar-brand{
     font-size: 24px;
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-    0 -5px 35px rgba(255,255,255,0.3);
+    text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
+    -3px -3px 6px rgba(0,0,0,0.2),
+    0 -5px 8px rgba(255,255,255,0.3),
+    0 4px 15px rgba(0,0,0,0.4);
 }
 /*button - pev & next*/
 .carousel-control-next, .carousel-control-prev{
     width: 150px;
+}
+.carousel-caption{
+    width: 1005px;
+}
+.edit-up-text-banner{
+    margin-bottom: 150px;
+}
+.carousel-caption h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.carousel-caption h3,.carousel-caption p{
+    text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
+    -3px -3px 6px rgba(0,0,0,0.2),
+    0 -5px 8px rgba(255,255,255,0.3),
+    0 4px 15px rgba(0,0,0,0.4);
 }
 /*Header*/
 
@@ -84,6 +112,16 @@ div .edit-nav-home .navbar-brand{
 .rp1, .rp2, .rp3{
     margin-top: 40px;
 }
+div .sale{
+    text-decoration: line-through;
+}
+div .card-title{
+    font-size: 18px;
+}
+
+div .sale-of-color{
+    color: #ff0200;
+}
 
 /*SanPham*/
 
@@ -97,6 +135,9 @@ footer div p{
 }
 .edit-hover-footer div a:hover{
     color: #b7d5ca;
+}
+.edit-hover-footer div a{
+    font-size: 14px;
 }
 
 /*SỬA FOOTER*/
