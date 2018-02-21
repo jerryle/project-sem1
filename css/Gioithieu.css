@@ -2,11 +2,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-/*header*/
-#mainNav{
-    position: absolute;
-    z-index: 1000;
-}
+/*----------------------------------header*/
 nav{
     background-color: #171717;
 }
@@ -23,9 +19,12 @@ nav .edit-nav-gt .navbar-brand{
 .align-menu ul li a:hover{
     border-bottom: 1px solid#ffffff;
 }
-/*header*/
+.editBannerGt{
+    width: 100%;
+}
+/*----------------------------------header*/
 
-/*content*/
+/*----------------------------------content*/
 .text-title-gt{
     font-weight: bold;
     font-style: italic;
@@ -33,7 +32,7 @@ nav .edit-nav-gt .navbar-brand{
 h6{
     line-height: 1.5;
 }
-/*content*/
+/*----------------------------------content*/
 
 
 

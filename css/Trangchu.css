@@ -22,21 +22,14 @@ div .edit-nav-home a{
     font-weight: bold;
 }
 
-/*position-header*/
-.edit-position{
-
-}
 .miniature-banner img{
     background-repeat: no-repeat;
     height: 75vh;
 }
 
 /*edit menu*/
-
 .align-menu ul li a{
-
-}
-.align-menu ul li a{
+    font-weight: normal;
     text-transform: uppercase;
     font-size: 16px;
     text-shadow: -4px 4px 6px rgba(0,0,0,0.4),
@@ -101,6 +94,24 @@ div .edit-nav-home .navbar-brand{
 /*small list*/
 .align-smallList{
     list-style-type: none;
+}
+.bg-smallList-1 a{
+    color: #ffffff;
+    left: 245px;
+    bottom: 75px;
+}
+.bg-smallList-1 a:hover{
+    border-bottom: 1px solid #e6e6e6;
+    color: #e6e6e6;
+}
+.bg-smallList-2 a{
+    color: #ffffff;
+    left: 270px;
+    bottom: 75px;
+}
+.bg-smallList-2 a:hover{
+    border-bottom: 1px solid #e6e6e6;
+    color: #e6e6e6;
 }
 /*small list*/
 
