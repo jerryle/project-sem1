@@ -2,13 +2,18 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-/*Header*/
+/*--------------------------------- HEADER */
 
 /*edit-navbar*/
+.position-nav{
+    top: 10px;
+    position: absolute;
+    z-index: 1000;
+    margin: 0 66px;
+}
 div .edit-nav-home{
     background-color: inherit;
     box-shadow: none;
-    z-index: 2;
 }
 
 /*edit text navbar*/
@@ -19,12 +24,7 @@ div .edit-nav-home a{
 
 /*position-header*/
 .edit-position{
-    position: relative;
-    top: -82px;
-}
-nav{
-    margin-top: 20px;
-    /*chỉnh margin,padding nav cần chỉnh theo background*/
+
 }
 .miniature-banner img{
     background-repeat: no-repeat;
@@ -34,16 +34,15 @@ nav{
 /*edit menu*/
 
 .align-menu ul li a{
-    position: relative;
-    top: 5px;
+
 }
 .align-menu ul li a{
     text-transform: uppercase;
     font-size: 16px;
-    text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
-    -3px -3px 6px rgba(0,0,0,0.3),
-    0 -5px 8px rgba(255,255,255,0.4),
-    0 4px 15px rgba(0,0,0,0.4);
+    text-shadow: -4px 4px 6px rgba(0,0,0,0.4),
+    -1px -3px 6px rgba(0,0,0,0.3),
+    0 3px 8px rgba(0,0,0,0.2),
+    0 4px 15px rgba(0,0,0,0.22);
 }
 
 /*border-bottom*/
@@ -53,8 +52,8 @@ div .edit-nav-home ul a:hover{
 /*logo*/
 div .edit-nav-home .navbar-brand{
     font-size: 24px;
-    text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
-    -3px -3px 6px rgba(0,0,0,0.2),
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4),
+    -2px -3px 6px rgba(0,0,0,0.3),
     0 -5px 8px rgba(255,255,255,0.3),
     0 4px 15px rgba(0,0,0,0.4);
 }
@@ -71,7 +70,7 @@ div .edit-nav-home .navbar-brand{
 }
 
 .carousel-caption h3{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -98,12 +97,24 @@ div .edit-nav-home .navbar-brand{
 .Azimut-S7 p{
     font-style: italic;
 }
-/*Header*/
 
-/*Search-home*/
+/*small list*/
+.align-smallList{
+    list-style-type: none;
+}
+/*small list*/
+
+/*--------------------------------HEADER*/
+
+/*--------------------------------Search-home*/
+.edit-searchTop{
+    bottom:15px;
+    position: relative;
+    z-index: 10;
+}
 .search-home-edit{
+    background-color: #ffffff;
     border: 1px solid  #bfbfbf;
-    border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 
 }
@@ -127,9 +138,9 @@ div .edit-nav-home .navbar-brand{
     border-radius: 0;
     border: 1px solid #bfbfbf;
 }
-/*Search-home*/
+/*---------------------------- Search-home*/
 
-/*SanPham*/
+/*----------------------------- SanPham*/
 .card-body{
     height: 147px;
 }
@@ -147,9 +158,9 @@ div .sale-of-color{
     color: #ff0200;
 }
 
-/*SanPham*/
+/*-------------------- SanPham*/
 
-/*FOOTER*/
+/*---------------------- FOOTER*/
 footer div p{
     margin: 10px 0 10px 0;
 }
@@ -171,6 +182,6 @@ footer div p{
     font-size: 14px;
 }
 
-/*FOOTER*/
+/* ----------------------- FOOTER*/
 
 
