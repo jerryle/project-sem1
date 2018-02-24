@@ -1,10 +1,12 @@
-
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
 /*----------------------------------header*/
 nav{
     background-color: #171717;
+    position: relative;
+    z-index: 1000;
 }
 nav a{
     text-transform: uppercase;
@@ -21,6 +23,8 @@ nav .edit-nav-gt .navbar-brand{
 }
 .editBannerGt{
     width: 100%;
+    position: absolute;
+    top:-160px;
 }
 /*----------------------------------header*/
 
@@ -34,8 +38,29 @@ h6{
 }
 /*----------------------------------content*/
 
+/* Override content */
+.OverrideContent{
+    position: relative;
+    z-index: 1000;
+    top:492px;
+    background-color: #ffffff;
+}
+/* Override content */
 
-
+/*breadcrumb*/
+.breadcrumb{
+    background-color: #ffffff;
+}
+.breadcrumb li a{
+    color: #313131;
+}
+.breadcrumb li .text-breadcrumb{
+    color: #000000;
+}
+.breadcrumb li a:hover{
+    color: #0b51c5;
+}
+/*breadcrumb*/
 
 /*FOOTER*/
 footer div p{
@@ -58,5 +83,4 @@ footer div p{
 .edit-developed p{
     font-size: 14px;
 }
-
 /*FOOTER*/

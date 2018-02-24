@@ -45,7 +45,7 @@
                         <a href="#" class="nav-link">thuyền mới</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">liên hệ</a>
+                        <a href="LienHe.html" class="nav-link">liên hệ</a>
                     </li>
                 </ul>
 
@@ -54,32 +54,158 @@
     </nav>
     <!-- Nav -->
 
-	<footer class="page-footer edit-color-footer">
+    <!-- Banner -->
+    <img class="editBannerGt" src="img/bg-LienHe/subs.jpg"/>
+    <!-- Banner -->
+
+    <!-- Override content -->
+    <section class="OverrideContent">
+        <!-- breadcrumb -->
         <div class="container">
-            <div class="row edit-hover-footer">
-                <div class="col-lg-2 col-xl-2 col-md-2">
-                    <a href="#" class="title tt-footer">trang chủ</a>
-                </div>
-                <div class="col-lg-2 col-xl-2 col-md-2">
-                    <a href="#" class="title gt-footer">giới thiệu</a>
-                </div>
-                <div class="col-lg-3 col-xl-3 col-md-3">
-                    <a href="#" class="title tsd-footer">thuyền đã sử dụng</a>
-                </div>
-                <div class="col-lg-2 col-xl-2 col-md-2">
-                    <a href="#" class="title tm-footer">thuyền mới</a>
-                </div>
-                <div class="col-lg-2 col-xl-2 col-md-2">
-                    <a href="LienHe.html" class="title lh-footer">liên hệ</a>
-                </div>
-            </div>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="Trangchu.html">Trang chủ</a></li>
+                <li class="breadcrumb-item">Liên hệ</li>
+            </ol>
+        </div>
+        <!-- breadcrumb -->
+
+        <!-- Content -->
+        <div class="container">
             <div class="row">
-                <div class="col-md-8 col-lg-9 edit-developed">
-                    <p class="text-md-left grey-text">© 2018 | Marine Fleet Việt Nam | Developed by Team4-1708A</p>
+                <div class="col-xl-4 left-column">
+                    <div class="row">
+                        <div class="col-xl col-12 col-sm-12 address-1">
+                            <!-- Card -->
+                            <div class="card example hoverable">
+                                <!-- content -->
+                                <div class="card-body">
+                                    <!-- title -->
+                                    <h4 class="card-title">Marine Fleet Hà Nội</h4>
+                                    <!-- text -->
+                                    <p class="card-text">Tầng 2, tòa nhà Detect, Từ Liêm, Hà nội, Việt Nam <br> Tel: +84.96.785.69.96 - Chị Dũng Xinh Đẹp.
+                                        <br> E-mail: info@marinefleet.com.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl col-12 col-sm-12 address">
+                            <!-- Card -->
+                            <div class="card example hoverable">
+                                <!-- content -->
+                                <div class="card-body">
+                                    <!-- title -->
+                                    <h4 class="card-title">Marine Fleet Hồ Chí Minh</h4>
+                                    <!-- text -->
+                                    <p class="card-text">Tầng 46, Bitexco Tower, Q1, tp Hồ Chí Minh, Việt Nam <br> Tel: +84.96.785.69.96 - Chị Dũng Xinh Đẹp.
+                                        <br> E-mail: info@marinefleet.com.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl col-12 col-sm-12 address">
+                            <!-- Card -->
+                            <div class="card example hoverable">
+                                <!-- content -->
+                                <div class="card-body">
+                                    <!-- title -->
+                                    <h4 class="card-title">Azimut Yachts Ukraine</h4>
+                                    <!-- text -->
+                                    <p class="card-text">01024, Kiev, luteranskaya st.17 <br> Tel: +38.044.269.96.966
+                                        <br>E-mail: info@aizmutyachts.ua</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-8 right-column">
+                    <div class="row">
+                        <div class="col-xl col-12 col-sm-12">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl col-12 col-sm-12 border-formLienHe">
+                            <form action="">
+                                <h5 class="mb-3"> Xin Quý khách để lại tin nhắn tại</h5>
+
+                                <div class="md-form">
+                                    <i class="fa fa-envelope grey-text prefix"></i>
+                                    <input type="email" id="emailLienHe" class="form-control">
+                                    <label for="emailLienHe">Email của bạn</label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xl">
+                                        <div class="md-form">
+                                            <i class="fa fa-user prefix grey-text"></i>
+                                            <input type="text" id="name" class="form-control">
+                                            <label for="name">Tên của bạn</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl">
+                                        <div class="md-form">
+                                            <i class="fa fa-phone prefix grey-text"></i>
+                                            <input type="number" id="phone" class="form-control">
+                                            <label for="phone">Số điện thoại</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-pencil prefix grey-text"></i>
+                                    <textarea type="text" id="ContactContent" rows="3" class="form-control md-textarea"></textarea>
+                                    <label for="ContactContent">Nội dung</label>
+                                </div>
+
+                                <button class="btn send-of-LienHe" type="submit">Gửi<i class="fa fa-paper-plane-o ml-2"></i></button>
+
+                            </form>
+                        </div>
+                        <div class="col-xl align-items-xl-center Dear">
+                            <h5>MARINE FLEET</h5>
+                            <p>Cám ơn quý khách đã liên hệ với công ty của chúng tôi, phục vụ quý khách hàng là niềm vinh hạnh của chúng tôi</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </footer>
+        <!-- Content -->
+
+        <!-- Footer -->
+        <footer class="page-footer edit-color-footer">
+            <div class="container">
+                <div class="row edit-hover-footer">
+                    <div class="col-lg-2 col-xl-2 col-md-2">
+                        <a href="Trangchu.html" class="title tt-footer">trang chủ</a>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-2">
+                        <a href="Gioithieu.html" class="title gt-footer">giới thiệu</a>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3">
+                        <a href="#" class="title tsd-footer">thuyền đã sử dụng</a>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-2">
+                        <a href="#" class="title tm-footer">thuyền mới</a>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-2">
+                        <a href="LienHe.html" class="title lh-footer">liên hệ</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-lg-9 edit-developed">
+                        <p class="text-md-left grey-text">© 2018 | Marine Fleet Việt Nam | Developed by Team4-1708A</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+    </section>
+    <!-- Override content -->
 
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -89,5 +215,10 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- link MapGoogle key API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0SQwPajTzoxOVo0zsqT6LE1KY88ZEwpA&callback=initMap"
+            type="text/javascript"></script>
+    <!-- my javascript -->
+    <script src="js/mjs.js"></script>
 </body>
 </html>
