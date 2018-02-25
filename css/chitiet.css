@@ -76,3 +76,40 @@ footer div p{
     font-size: 14px;
 }
 /*FOOTER*/
+
+/*content*/
+.align-buy-ct-1,.align-buy-ct-2,.align-buy-ct-3{
+    list-style-type: none;
+    border: 1px solid inherit;
+    background-color: #F9F9F9;
+
+}
+.align-buy-ct-1 li{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+}
+.align-buy-ct-2 li{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom:5px;
+}
+.text-buy-1{
+    font-weight: bold;
+    font-size:14px;
+}
+.edit-text-croatia-1{
+    font-size: 14px;
+}
+.edit-text-croatia-1 h5,.edit-text-croatia-2 h5{
+    font-weight: bold;
+}
+.edit-text-croatia-2 h5{
+    margin-top: 50px;
+}
+.row-1{
+    background-color: #EFEFEF;
+}
+/*content*/
