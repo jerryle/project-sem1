@@ -15,3 +15,27 @@ $ ( function () {
 
    google.maps.event.addDomlistener(window,'load',initMap());
 });
+// noUI slider
+var priceslid = document.getElementById('price-filter');
+var range_all_sliders = {
+    'min': [     0 ],
+    '10%': [   500,  500 ],
+    '50%': [  4000, 1000 ],
+    'max': [ 10000 ]
+};
+
+
+noUiSlider.create(priceslid, {
+    start: [0, 10000],
+    connect: [false, true, false],
+    range: {
+        'min': [     0 ],
+        '10%': [   500,  500 ],
+        '50%': [  4000, 1000 ],
+        'max': [ 10000 ]
+    },
+    pips: {
+        mode: 'range',
+        density: 3
+    }
+});
