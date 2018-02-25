@@ -24,48 +24,21 @@ nav .edit-nav-gt .navbar-brand{
 .editBannerGt{
     width: 100%;
     position: absolute;
-    top:-150px;
+    top:-160px;
 }
 /*----------------------------------header*/
-/*breadcrumb*/
-
-/*breadcrumb*/
-
-/*content*/
-.left-column .address,.left-column .address-1{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.left-column .address-1 .card-body{
-    background-color: #007199;
-}
-.left-column .address-1 .card-body h4,.left-column .address-1 .card-body p{
-    color: #ffffff;
-}
-.Dear h5,.Dear p{
-    text-align: center;
-}
-.Dear p{
-    opacity: 0.8;
-    font-size: 16px;
-}
-.Dear h5{
-    font-weight: bold;
-    margin-top: 80px;
-}
-/*content*/
 /* Override content */
 .OverrideContent{
     position: relative;
     z-index: 1000;
-    top:492px;
+    top:490px;
     background-color: #ffffff;
 }
 /* Override content */
 
 /*breadcrumb*/
 .breadcrumb{
-    background-color: inherit;
+    background-color: #ffffff;
 }
 .breadcrumb li,.breadcrumb li a{
     font-size: 14px;
@@ -73,16 +46,14 @@ nav .edit-nav-gt .navbar-brand{
 .breadcrumb li a{
     color: #313131;
 }
+.breadcrumb li .text-breadcrumb{
+    color: #000000;
+}
 .breadcrumb li a:hover{
     color: #0b51c5;
 }
 /*breadcrumb*/
 
-/*send-of-LienHe*/
-.send-of-LienHe{
-    background-color: #007199;
-}
-/*send-of-LienHe*/
 /*FOOTER*/
 footer div p{
     margin: 10px 0 10px 0;

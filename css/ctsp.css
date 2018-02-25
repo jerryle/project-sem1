@@ -24,48 +24,65 @@ nav .edit-nav-gt .navbar-brand{
 .editBannerGt{
     width: 100%;
     position: absolute;
-    top:-150px;
+    top:10px;
 }
-/*----------------------------------header*/
-/*breadcrumb*/
 
-/*breadcrumb*/
-
-/*content*/
-.left-column .address,.left-column .address-1{
-    margin-top: 5px;
-    margin-bottom: 5px;
+/*note*/
+.position-note{
+    position: relative;
+    z-index: 1000;
+    top: 260px;
 }
-.left-column .address-1 .card-body{
-    background-color: #007199;
-}
-.left-column .address-1 .card-body h4,.left-column .address-1 .card-body p{
+.text-note-ctsp p{
+    font-size: 14px;
     color: #ffffff;
 }
-.Dear h5,.Dear p{
-    text-align: center;
+.text-note-ctsp{
+    border: 1px solid inherit;
+    background-color: #000000;
+    opacity: 0.5;
 }
-.Dear p{
-    opacity: 0.8;
-    font-size: 16px;
-}
-.Dear h5{
-    font-weight: bold;
-    margin-top: 80px;
-}
-/*content*/
+/*note*/
+
 /* Override content */
 .OverrideContent{
     position: relative;
     z-index: 1000;
-    top:492px;
+    top:290px;
+    background-color: #ffffff;
+}
+.OverrideContent-YachtNew{
+    position: relative;
+    z-index: 1000;
+    top:310px;
     background-color: #ffffff;
 }
 /* Override content */
+/*----------------------------- SanPham*/
+.card-body{
+    height: 147px;
+}
+.rp1, .rp2, .rp3{
+    margin-top: 20px;
+}
+div .sale{
+    text-decoration: line-through;
+}
+div .card-title{
+    font-size: 18px;
+}
 
+div .sale-of-color{
+    color: #ff0200;
+}
+.view img{
+    width: 100%;
+}
+
+/*-------------------- SanPham*/
 /*breadcrumb*/
 .breadcrumb{
-    background-color: inherit;
+    background-color: #ffffff;
 }
 .breadcrumb li,.breadcrumb li a{
     font-size: 14px;
@@ -73,16 +90,13 @@ nav .edit-nav-gt .navbar-brand{
 .breadcrumb li a{
     color: #313131;
 }
+.breadcrumb li .text-breadcrumb{
+    color: #000000;
+}
 .breadcrumb li a:hover{
     color: #0b51c5;
 }
 /*breadcrumb*/
-
-/*send-of-LienHe*/
-.send-of-LienHe{
-    background-color: #007199;
-}
-/*send-of-LienHe*/
 /*FOOTER*/
 footer div p{
     margin: 10px 0 10px 0;
@@ -105,3 +119,4 @@ footer div p{
     font-size: 14px;
 }
 /*FOOTER*/
+

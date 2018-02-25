@@ -1,3 +1,4 @@
+//Google Map API
 $ ( function () {
    function initMap() {
         var location = new google.maps.LatLng(21.028802,105.781693);

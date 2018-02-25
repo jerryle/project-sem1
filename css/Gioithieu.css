@@ -42,7 +42,7 @@ h6{
 .OverrideContent{
     position: relative;
     z-index: 1000;
-    top:492px;
+    top:490px;
     background-color: #ffffff;
 }
 /* Override content */
@@ -50,6 +50,9 @@ h6{
 /*breadcrumb*/
 .breadcrumb{
     background-color: #ffffff;
+}
+.breadcrumb li,.breadcrumb li a{
+    font-size: 14px;
 }
 .breadcrumb li a{
     color: #313131;
