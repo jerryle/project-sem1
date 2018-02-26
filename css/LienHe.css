@@ -111,3 +111,13 @@ footer div p{
     font-size: 14px;
 }
 /*FOOTER*/
+.static-banner{
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+.static-banner .static-banner-background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
