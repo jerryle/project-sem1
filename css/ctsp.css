@@ -3,7 +3,7 @@ body{
 }
 
 /*----------------------------------header*/
-nav{
+nav{    
     background-color: #171717;
     position: relative;
     z-index: 1000;
@@ -44,6 +44,12 @@ nav .edit-nav-gt .navbar-brand{
 }
 /*note*/
 
+/*filter*/
+.edit-filter{
+
+ }
+/*filter*/
+
 /* Override content */
 .OverrideContent{
     position: relative;
@@ -64,6 +70,9 @@ nav .edit-nav-gt .navbar-brand{
 }
 .rp1, .rp2, .rp3{
     margin-top: 20px;
+}
+.rp1{
+    margin-top:50px; 
 }
 div .sale{
     text-decoration: line-through;
