@@ -20,9 +20,22 @@
     left: 100%;
 }
 
+.noUi-connect {
+    background: #015179;
+}
+
 .product-filter {
     background: #efefef;
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     z-index: 1000;
+}
+
+.product-filter-result {
+    padding-top: 50px;
+}
+
+.product-filter h4 {
+    padding: 10px 0;
+    color: #015179;
 }

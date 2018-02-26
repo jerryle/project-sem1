@@ -16,6 +16,7 @@
     <!-- css/thuyenmoi   -->
     <link rel="stylesheet" href="css/ctsp.css">
     <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/filter.css">
 </head>
 <body>
 <!-- Nav -->
@@ -83,15 +84,29 @@
         </ol>
     </div>
     <!-- breadcrumb -->
+
+    <!-- Product Filter -->
     <div class="product-filter">
         <div class="container hidden-xs hidden-sm">
 
 
             <div class="row">
                 <div class="col-xl-7">
+                    <h4>Giá tiền</h4>
+
                     <div id="price-filter"></div>
 
-                    <div class="row price-filter-result">
+                    <div class="product-filter-result row">
+                        <div class="col-2">
+                            <div class="md-form input-group-sm-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">USD</span>
+                                    <!-- <span class="input-group-text">0.00</span> -->
+                                </div>
+                            </div>
+
+                        </div>
+                        
                         <div class="col-3">
                             <div class="md-form input-group-sm-3">
                                 <input type="text" id="price-lower" aria-label="Amount (to the nearest dollar)">
@@ -106,14 +121,14 @@
                     </div>
 
 
-
                 </div>
                 <div class="col-xl">
                 </div>
                 <div class="col-xl-4">
+                    <h4>Chiều dài</h4>
                     <div id="length-filter"></div>
 
-                    <div class="row price-filter-result">
+                    <div class="product-filter-result row">
                         <div class="col-3">
                             <div class="md-form input-group-sm-3">
                                 <input type="text" id="length-lower" aria-label="Amount (to the nearest dollar)">
@@ -123,8 +138,21 @@
                         <div class="col-3">
                             <div class="md-form input-group-sm-3">
                                 <input type="text" id="length-upper" aria-label="Amount (to the nearest dollar)">
+                                
                             </div>
+
                         </div>
+                        <div class="col-3">
+                            <div class="md-form input-group-sm-3">
+                                <!-- <input type="text" id="length-upper" aria-label="Amount (to the nearest dollar)"> -->
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">m</span>
+                                    <!-- <span class="input-group-text">0.00</span> -->
+                                </div>
+                            </div>
+
+                        </div>
+                        
                     </div>
                 </div>
             </div>

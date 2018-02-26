@@ -15,6 +15,8 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- css/thuyendasudung -->
     <link rel="stylesheet" href="css/ctsp.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/filter.css">
 </head>
 <body>
 <!-- Nav -->
@@ -81,18 +83,80 @@
     </div>
     <!-- breadcrumb -->
 
-    <!-- filter -->
-    <div class="container hidden-xs hidden-sm align-filter">
-        <div class="row">
-            <div class="col-lg-8">
-                <div id="price-filter"></div>
-            </div>
-            <div class="col-lg-4">
-                <div id="length-filter"></div>
+
+    <!-- Product Filter -->
+    <div class="product-filter">
+        <div class="container hidden-xs hidden-sm">
+
+
+            <div class="row">
+                <div class="col-xl-7">
+                    <h4>Giá tiền</h4>
+
+                    <div id="price-filter"></div>
+
+                    <div class="product-filter-result row">
+                        <div class="col-2">
+                            <div class="md-form input-group-sm-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">USD</span>
+                                    <!-- <span class="input-group-text">0.00</span> -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-3">
+                            <div class="md-form input-group-sm-3">
+                                <input type="text" id="price-lower" aria-label="Amount (to the nearest dollar)">
+
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="md-form input-group-sm-3">
+                                <input type="text" id="price-upper" aria-label="Amount (to the nearest dollar)">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-xl">
+                </div>
+                <div class="col-xl-4">
+                    <h4>Chiều dài</h4>
+                    <div id="length-filter"></div>
+
+                    <div class="product-filter-result row">
+                        <div class="col-3">
+                            <div class="md-form input-group-sm-3">
+                                <input type="text" id="length-lower" aria-label="Amount (to the nearest dollar)">
+
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="md-form input-group-sm-3">
+                                <input type="text" id="length-upper" aria-label="Amount (to the nearest dollar)">
+
+                            </div>
+
+                        </div>
+                        <div class="col-3">
+                            <div class="md-form input-group-sm-3">
+                                <!-- <input type="text" id="length-upper" aria-label="Amount (to the nearest dollar)"> -->
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">m</span>
+                                    <!-- <span class="input-group-text">0.00</span> -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- filter -->
 
     <!-- Sản phẩm-->
     <div class="container">
@@ -426,6 +490,8 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!-- my javascript -->
+<script src="js/nouislider.js"></script>
+<script src="js/wNumb.js"></script>
 <script type="text/javascript" src="js/mjs.js"></script>
 
 </body>

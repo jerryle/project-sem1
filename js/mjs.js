@@ -42,12 +42,16 @@ priceslid.noUiSlider.on('update', function (values, handle) {
     snappriceValues[handle].value = values[handle];
 });
 
-snappriceValues[0].addEventListener('change', function () {
-    priceslid.noUiSlider.set(this.value);
-});
+function setPriceHandle(i, value) {
+    var  r = [null, null];
+    r[i] = value;
+    priceslid.noUiSlider.set(r);
+}
 
-snappriceValues[1].addEventListener('change', function () {
-    priceslid.noUiSlider.set(this.value);
+snappriceValues.forEach(function (input, handle) {
+    input.addEventListener('change', function () {
+        setPriceHandle(handle, this.value);
+    });
 });
 
 var lengthslid = document.getElementById("length-filter");
@@ -83,11 +87,16 @@ lengthslid.noUiSlider.on('update', function (values, handle) {
     snaplengthValues[handle].value = values[handle];
 });
 
-snaplengthValues[0].addEventListener('change', function () {
-    lengthslid.noUiSlider.set(this.value);
-});
+function setLengthHandle(i, value) {
+    var  r = [null, null];
+    r[i] = value;
+    lengthslid.noUiSlider.set(r);
+}
+
+snaplengthValues.forEach(function (input, handle) {
+    input.addEventListener('change', function () {
+        setLengthHandle(handle, this.value);
+    });
 
 
-snaplengthValues[1].addEventListener('change', function () {
-    lengthslid.noUiSlider.set(this.value);
 });
