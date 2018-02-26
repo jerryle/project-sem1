@@ -1,20 +1,13 @@
 //Google Map API
-$ ( function () {
-   function initMap() {
-        var location = new google.maps.LatLng(21.028802,105.781693);
+function initMap() {
+    var options = {
+        zoom: 8,
+        center:{lat:42.3601,lng:-781.0589}
+    }
 
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-            center: location,
-            zoom: 16,
-            panControl: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        
-   }
+    var map = new google.maps.Map(document.getElementById('map'), options);
+};
 
-   google.maps.event.addDomlistener(window,'load',initMap());
-});
 // noUI slider
 var priceslid = document.getElementById('price-filter');
 var range_all_sliders = {

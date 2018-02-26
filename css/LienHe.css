@@ -2,6 +2,11 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+#map {
+    height: 600px;
+    width: 100%;
+}
+
 /*----------------------------------header*/
 nav{
     background-color: #171717;
