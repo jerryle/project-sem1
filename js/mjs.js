@@ -1,12 +1,12 @@
 //Google Map API
 function initMap() {
     var options = {
-        zoom: 8,
-        center:{lat:42.3601,lng:-781.0589}
-    }
+        zoom: 18,
+        center:{lat:21.028774,lng:105.781745}
+    };
 
     var map = new google.maps.Map(document.getElementById('map'), options);
-};
+}
 
 // noUI slider
 var priceslid = document.getElementById('price-filter');
