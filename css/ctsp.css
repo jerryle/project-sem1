@@ -23,6 +23,7 @@ nav .edit-nav-gt .navbar-brand{
 }
 .editBannerGt{
     width: 100%;
+    height: 100%;
     position: absolute;
     top:10px;
 }
@@ -128,4 +129,3 @@ footer div p{
     font-size: 14px;
 }
 /*FOOTER*/
-
