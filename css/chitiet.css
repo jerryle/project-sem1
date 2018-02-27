@@ -5,8 +5,6 @@ body{
 /*----------------------------------header*/
 nav{
     background-color: #171717;
-    position: relative;
-    z-index: 1000;
 }
 nav a{
     text-transform: uppercase;
@@ -21,20 +19,19 @@ nav .edit-nav-gt .navbar-brand{
 .align-menu ul li a:hover{
     border-bottom: 1px solid#ffffff;
 }
-.editBannerGt{
+/*----------------------------------header*/
+/*Background*/
+.static-banner{
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+.static-banner .static-banner-background{
+    height: 100%;
     width: 100%;
     position: absolute;
-    top:-160px;
 }
-/*----------------------------------header*/
-/* Override content */
-.OverrideContent{
-    position: relative;
-    z-index: 1000;
-    top:490px;
-    background-color: #ffffff;
-}
-/* Override content */
+/*Background*/
 
 /*breadcrumb*/
 .breadcrumb{
@@ -54,30 +51,19 @@ nav .edit-nav-gt .navbar-brand{
 }
 /*breadcrumb*/
 
-/*FOOTER*/
-footer div p{
-    margin: 10px 0 10px 0;
-}
-.social-btn-edit ul li a{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.edit-hover-footer div a:hover{
-    color: #b7d5ca;
-}
-.edit-hover-footer div a{
-    font-size: 14px;
-}
-
-.edit-color-footer{
-    background-color: #171717;
-}
-.edit-developed p{
-    font-size: 14px;
-}
-/*FOOTER*/
-
 /*content*/
+.align-download .align-buy-ct-3 .btn{
+    box-shadow: none;
+}
+.align-download .align-buy-ct-3 li a i {
+    color: #fe1212;
+}
+.color-text{
+    color: #fe1212;
+}
+.align-download ul{
+    background-color:#F9F9F9;
+}
 .align-buy-ct-1,.align-buy-ct-2,.align-buy-ct-3{
     list-style-type: none;
     border: 1px solid inherit;
@@ -113,3 +99,32 @@ footer div p{
     background-color: #EFEFEF;
 }
 /*content*/
+
+/*FOOTER*/
+footer div p{
+    margin: 10px 0 10px 0;
+}
+.social-btn-edit ul li a{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.edit-hover-footer div a:hover{
+    color: #b7d5ca;
+}
+.edit-hover-footer div a{
+    font-size: 14px;
+}
+
+.edit-color-footer{
+    background-color: #171717;
+}
+.edit-developed p{
+    font-size: 14px;
+}
+/*FOOTER*/
+.align-chitiet div a img{
+    width: 100%;
+}
+.modal-body img{
+    width: 100%;
+}

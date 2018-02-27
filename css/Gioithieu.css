@@ -38,14 +38,18 @@ h6{
 }
 /*----------------------------------content*/
 
-/* Override content */
-.OverrideContent{
+/*Background*/
+.static-banner{
+    height: 540px;
+    overflow: hidden;
     position: relative;
-    z-index: 1000;
-    top:490px;
-    background-color: #ffffff;
 }
-/* Override content */
+.static-banner .static-banner-background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*Background*/
 
 /*breadcrumb*/
 .breadcrumb{
@@ -87,3 +91,7 @@ footer div p{
     font-size: 14px;
 }
 /*FOOTER*/
+.align-download-gt .btn{
+    box-shadow: none;
+    background-color: #007199;
+}

@@ -2,16 +2,9 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-#map {
-    height: 600px;
-    width: 100%;
-}
-
 /*----------------------------------header*/
 nav{
     background-color: #171717;
-    position: relative;
-    z-index: 1000;
 }
 nav a{
     text-transform: uppercase;
@@ -26,48 +19,20 @@ nav .edit-nav-gt .navbar-brand{
 .align-menu ul li a:hover{
     border-bottom: 1px solid#ffffff;
 }
-.editBannerGt{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:-150px;
-}
 /*----------------------------------header*/
-/*breadcrumb*/
 
-/*breadcrumb*/
-
-/*content*/
-.left-column .address,.left-column .address-1{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.left-column .address-1 .card-body{
-    background-color: #007199;
-}
-.left-column .address-1 .card-body h4,.left-column .address-1 .card-body p{
-    color: #ffffff;
-}
-.Dear h5,.Dear p{
-    text-align: center;
-}
-.Dear p{
-    opacity: 0.8;
-    font-size: 16px;
-}
-.Dear h5{
-    font-weight: bold;
-    margin-top: 80px;
-}
-/*content*/
-/* Override content */
-.OverrideContent{
+/*Banner*/
+.static-banner{
+    height: 540px;
+    overflow: hidden;
     position: relative;
-    z-index: 1000;
-    top:492px;
-    background-color: #ffffff;
 }
-/* Override content */
+.static-banner .static-banner-background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*Banner*/
 
 /*breadcrumb*/
 .breadcrumb{
@@ -84,11 +49,52 @@ nav .edit-nav-gt .navbar-brand{
 }
 /*breadcrumb*/
 
+/*address*/
+.address-2{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.address-2-2{
+    background-color: #F4F4F4;
+}
+.address-1{
+    margin-bottom: 8px;
+}
+.address-1-2{
+    background-color: #007199;
+}
+.align-card-lh .address-1-2 h4, .align-card-lh .address-1-2 p{
+    color: #ffffff;
+}
+.Dear h5,.Dear p{
+    text-align: center;
+}
+.Dear p{
+    opacity: 0.8;
+    font-size: 16px;
+}
+.Dear h5{
+    font-weight: bold;
+    margin-top: 80px;
+}
+/*address*/
+
 /*send-of-LienHe*/
 .send-of-LienHe{
     background-color: #007199;
 }
+.h5-align-Dear{
+    opacity: 0.8;
+}
 /*send-of-LienHe*/
+
+/*Map*/
+#map {
+    height: 600px;
+    width: 100%;
+}
+/*Map*/
+
 /*FOOTER*/
 footer div p{
     margin: 10px 0 10px 0;
@@ -111,13 +117,3 @@ footer div p{
     font-size: 14px;
 }
 /*FOOTER*/
-.static-banner{
-    height: 450px;
-    overflow: hidden;
-    position: relative;
-}
-.static-banner .static-banner-background{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}

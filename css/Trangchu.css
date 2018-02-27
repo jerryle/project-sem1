@@ -6,10 +6,9 @@ body{
 
 /*edit-navbar*/
 .position-nav{
-    top: 10px;
+    top: 30px;
     position: absolute;
     z-index: 1000;
-    margin: 0 66px;
 }
 div .edit-nav-home{
     background-color: inherit;
@@ -219,4 +218,15 @@ footer div p{
 
 /* ----------------------- FOOTER*/
 
-
+/*Background*/
+.static-banner{
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+.static-banner .static-banner-background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*Background*/
