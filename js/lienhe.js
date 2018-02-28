@@ -4,8 +4,8 @@
 
 var mapLatLngArray = [
     [21.028774,105.781745],
-    [21.028774,120.781745],
-    [16.028774,105.781745]
+    [10.771889, 106.704297],
+    [50.444928, 30.525974]
 ];
 
 var curCard = 0;
@@ -25,15 +25,24 @@ var cardtexts = document.getElementsByClassName('card-comp-text');
         var marker = new google.maps.Marker({position:myCenter});
         marker.setMap(map);
 
+<<<<<<< HEAD
+=======
+        //zoom
+>>>>>>> 74b904f7a9501152e0c446becb9c8adc92845bab
         google.maps.event.addListener(marker,'click',function() {
             map.setZoom(18);
             map.setCenter(marker.getPosition());
         });
 
+<<<<<<< HEAD
         if ( !card.classList.contains('address-active')) {
             card.classList.add('address-active');
             if (card.classList.contains('address-unactive')) card.classList.remove('address-unactive');
         }
+=======
+        if ( !card.classList.contains('address-active')) card.classList.add('address-active');
+>>>>>>> 74b904f7a9501152e0c446becb9c8adc92845bab
+
 
         curCard = index;
         changeCurCardText();
