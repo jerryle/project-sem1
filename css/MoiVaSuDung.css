@@ -3,7 +3,7 @@ body{
 }
 
 /*----------------------------------header*/
-nav{    
+nav{
     background-color: #171717;
 }
 nav a{
@@ -43,7 +43,7 @@ nav .edit-nav-gt .navbar-brand{
 .text-note-ctsp{
     border: 1px solid inherit;
     background-color: #000000;
-    opacity: 0.5;
+    opacity: 0.72;
 }
 /*note*/
 /*----------------------------- SanPham*/
@@ -114,4 +114,7 @@ footer div p{
     .product-filter{
         display: none;
     }
+}
+.nav-align-pagination{
+    background-color: inherit;
 }

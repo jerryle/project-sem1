@@ -133,6 +133,11 @@ div .edit-nav-home .navbar-brand{
 }
 .content-bg h3,.content-bg p{
     color: #ffffff;
+    text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
+    -3px -3px 6px rgba(0,0,0,0.2),
+    0 -5px 8px rgba(0,0,0,0.3),
+    0 4px 15px rgba(0,0,0,0.4);
+
 }
 /*--------------------------------HEADER*/
 
