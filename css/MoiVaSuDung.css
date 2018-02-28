@@ -47,9 +47,9 @@ nav .edit-nav-gt .navbar-brand{
 }
 /*note*/
 /*----------------------------- SanPham*/
-.card-body{
-    height: 147px;
-}
+/*.card-body{*/
+    /*height: 147px;*/
+/*}*/
 .rp1, .rp2, .rp3{
     margin-top: 20px;
 }

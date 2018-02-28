@@ -1,3 +1,7 @@
 .menuactive {
     border-bottom: 1px solid#ffffff;
 }
+
+.products .card-body {
+    height: 147px;
+}
