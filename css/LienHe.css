@@ -122,4 +122,8 @@ footer div p{
 .edit-developed p{
     font-size: 14px;
 }
+
+.slotcard:hover {
+    cursor: pointer;
+}
 /*FOOTER*/
