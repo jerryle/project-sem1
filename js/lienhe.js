@@ -10,6 +10,7 @@ var mapLatLngArray = [
 
 var curCard = 0;
 var cards = document.getElementsByClassName('slotcard');
+var cardtexts = document.getElementsByClassName('card-comp-text');
 
 [].slice.apply(cards).forEach(function (card, index) {
     card.addEventListener('click', function (e) {
@@ -24,16 +25,43 @@ var cards = document.getElementsByClassName('slotcard');
         var marker = new google.maps.Marker({position:myCenter});
         marker.setMap(map);
 
-        if ( !card.classList.contains('address-active')) card.classList.add('address-active');
+        google.maps.event.addListener(marker,'click',function() {
+            map.setZoom(18);
+            map.setCenter(marker.getPosition());
+        });
+
+        if ( !card.classList.contains('address-active')) {
+            card.classList.add('address-active');
+            if (card.classList.contains('address-unactive')) card.classList.remove('address-unactive');
+        }
 
         curCard = index;
+        changeCurCardText();
         clearCurColor();
     });
 });
 
+function changeCurCardText () {
+    [].slice.apply(cardtexts).forEach(function (card, index) {
+        if (card.classList.contains('jactive') && curCard !== index) {
+            card.classList.remove('jactive');
+            // if (!card.classList.contains('jactive')) card.classList.add('jactive');
+        }
+        else if(!card.classList.contains('jactive') && curCard === index)
+        {
+            card.classList.add('jactive');
+        }
+
+    });
+
+}
+
 function clearCurColor() {
     [].slice.apply(cards).forEach(function (card, index) {
-        if (card.classList.contains('address-active') && curCard !== index) card.classList.remove('address-active');
+        if (card.classList.contains('address-active') && curCard !== index) {
+            card.classList.remove('address-active');
+            if (!card.classList.contains('address-unactive')) card.classList.add('address-unactive');
+        }
 
     });
 }

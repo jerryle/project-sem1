@@ -56,19 +56,20 @@ nav .edit-nav-gt .navbar-brand{
 }
 .address-unactive{
     background-color: #F4F4F4;
+    color: #000;
 }
 .address-1{
     margin-bottom: 8px;
 }
 .address-active{
-    background-color: #759986;
+    background-color: #007199;
+    color: #fff;
 }
-.address-active h4, .address-active p{
+.card-comp-text{
+    color: #000;
+}
+.jactive {
     color: #ffffff;
-}
-
-.card .card-text {
-    color: #000000;
 }
 
 .Dear h5,.Dear p{
