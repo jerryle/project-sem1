@@ -110,11 +110,6 @@ footer div p{
     font-size: 14px;
 }
 /*FOOTER*/
-@media screen and (max-width: 598px) {
-    .product-filter{
-        display: none;
-    }
-}
 .nav-align-pagination{
     background-color: inherit;
 }
