@@ -4,8 +4,8 @@
 
 var mapLatLngArray = [
     [21.028774,105.781745],
-    [21.028774,120.781745],
-    [16.028774,105.781745]
+    [10.771889, 106.704297],
+    [50.444928, 30.525974]
 ];
 
 var curCard = 0;
@@ -24,7 +24,14 @@ var cards = document.getElementsByClassName('slotcard');
         var marker = new google.maps.Marker({position:myCenter});
         marker.setMap(map);
 
+        //zoom
+        google.maps.event.addListener(marker,'click',function() {
+            map.setZoom(18);
+            map.setCenter(marker.getPosition());
+        });
+
         if ( !card.classList.contains('address-active')) card.classList.add('address-active');
+
 
         curCard = index;
         clearCurColor();
