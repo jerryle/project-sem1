@@ -54,18 +54,23 @@ nav .edit-nav-gt .navbar-brand{
     margin-top: 8px;
     margin-bottom: 8px;
 }
-.address-2-2{
+.address-unactive{
     background-color: #F4F4F4;
 }
 .address-1{
     margin-bottom: 8px;
 }
-.address-1-2{
-    background-color: #007199;
+.address-active{
+    background-color: #759986;
 }
-.align-card-lh .address-1-2 h4, .align-card-lh .address-1-2 p{
+.address-active h4, .address-active p{
     color: #ffffff;
 }
+
+.card .card-text {
+    color: #000000;
+}
+
 .Dear h5,.Dear p{
     text-align: center;
 }
