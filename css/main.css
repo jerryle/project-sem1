@@ -2,6 +2,19 @@
     border-bottom: 1px solid#ffffff;
 }
 
+/* Sản Phẩm*/
 .products .card-body {
     height: 147px;
 }
+.products .card-body h4{
+    font-weight: bold;
+}
+/* Sản Phẩm */
+/* hidden-search */
+.btn-color{
+    background-color: #007199;
+}
+.align-indicators .primary-color{
+    background-color: #007199!important;
+}
+/* hidden-search */
