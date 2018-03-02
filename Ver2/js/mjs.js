@@ -1,6 +1,8 @@
 
 // noUI slider
 var priceslid = document.getElementById("price-filter");
+var priceupper = 20000000;
+var pricelower = 30000;
 
 noUiSlider.create(priceslid, {
     start: [0, 20000000],
@@ -76,11 +78,16 @@ var snaplengthValues = [
 
 lengthslid.noUiSlider.on('update', function (values, handle) {
     snaplengthValues[handle].value = values[handle];
+    if(handle === 1) priceupper = values[handle];
+    else if(handle === 0) pricelower = values[handle];
+
 });
 
 function setLengthHandle(i, value) {
     var  r = [null, null];
     r[i] = value;
+    if(i === 1) priceupper = value;
+    else if(i === 0) pricelower = value;
     lengthslid.noUiSlider.set(r);
 }
 

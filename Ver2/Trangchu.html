@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp" ng-controller="myCtrl" >
 
 <head>
     <meta charset="utf-8">
@@ -17,6 +17,15 @@
     <!-- css/Trang-chu -->
     <link href="css/Trangchu.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="js/core.js"></script>
 </head>
 
 <body>
@@ -619,11 +628,9 @@
     </div>
     <!-- button-more -->
 
-    <!-- Sản phẩm-->
+    <!-- San pham-->
     <div class="container products">
-        <!--Row sp_1-->
-        <div class="row rp1">
-            <!--SP_1-->
+        <div ng-repeat="sanpham in sanphams|filter:search" ng-if="$index % 4 == 0" class="row">
             <div class="col-xl-3 col-12 col-sm-6 my-2">
 
                 <!-- Card -->
@@ -640,9 +647,9 @@
                     <!-- content -->
                     <div class="card-body">
                         <!-- title -->
-                        <h4 class="card-title">Beneteau Gran Turismo 38, Italy</h4>
+                        <h4 class="card-title">{{tensanpham[$index][0]}}</h4>
                         <!-- text -->
-                        <p class="card-text">2011 | <span class="font-weight-bold blue-text">$ 299 995</span> <span class="badge badge-pill danger-color">New</span></p>
+                        <p class="card-text">2011 | <span class="font-weight-bold blue-text">$ {{tensanpham[$index][1]}}</span> <span class="badge badge-pill danger-color">New</span></p>
                     </div>
                 </div>
             </div>
@@ -663,9 +670,9 @@
                     <!-- content -->
                     <div class="card-body">
                         <!-- title -->
-                        <h4 class="card-title">Absolute 39, 2008 UAE</h4>
+                        <h4 class="card-title">{{tensanpham[$index + 1][0]}}</h4>
                         <!-- text -->
-                        <p class="card-text">2008 | <span class="font-weight-bold blue-text">$ 189 000</span></p>
+                        <p class="card-text">2008 | <span class="font-weight-bold blue-text">$ {{tensanpham[$index + 1][1]}}</span></p>
                     </div>
                 </div>
             </div>
@@ -686,9 +693,9 @@
                     <!-- content -->
                     <div class="card-body">
                         <!-- title -->
-                        <h4 class="card-title">Jeanneau Prestige 50S, Croatia</h4>
+                        <h4 class="card-title">{{tensanpham[$index + 2][0]}}</h4>
                         <!-- text -->
-                        <p class="card-text">2008 | <span class="font-weight-bold blue-text">$ 371 658</span> <span class="badge badge-pill danger-color">New</span></p>
+                        <p class="card-text">2008 | <span class="font-weight-bold blue-text">$ {{tensanpham[$index + 2][1]}}</span> <span class="badge badge-pill danger-color">New</span></p>
                     </div>
                 </div>
             </div>
@@ -709,211 +716,15 @@
                     <!-- content -->
                     <div class="card-body">
                         <!-- title -->
-                        <h4 class="card-title">Azimut 35, 2008 Spain</h4>
+                        <h4 class="card-title">{{tensanpham[$index + 3][0]}}</h4>
                         <!-- text -->
-                        <p class="card-text">2008 | <span class="font-weight-bold blue-text">$ 310 750</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Row sp_2-->
-        <div class="row rp2">
-            <!--SP_5-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_5.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">Sealine C48, 2011, Montenegro</h4>
-                        <!-- text -->
-                        <p class="card-text">2011 | <span class="font-weight-bold blue-text">$ 410 191</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!--SP_6-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_6.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">Van der valk continental II 20.00</h4>
-                        <!-- text -->
-                        <p class="card-text">2013 | <span class="font-weight-bold blue-text">$ 2 229 554 <span class="badge badge-pill danger-color">New</span></span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!--SP_7-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_7.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">Marquis 630 Sport, Montenegro</h4>
-                        <!-- text -->
-                        <p class="card-text">2012 | <span class="font-weight-bold blue-text">$ 1 863 260</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!--SP_8-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_8.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">Mcy 65, 2012, Italy</h4>
-                        <!-- text -->
-                        <p class="card-text">2008 | <span class="sale font-weight-bold blue-text">$ 1 702 913</span> <span
-                                class="font-weight-bold sale-of-color">$ 1 429 452</span></p>
-                        <span class="badge badge-pill primary-color">bestseller</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Row sp_3-->
-        <div class="row rp3">
-            <!--SP_9-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_9.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">Sessa F54, 2012, Tây Ban Nha</h4>
-                        <!-- text -->
-                        <p class="card-text">2012 | <span class="sale font-weight-bold blue-text">$ 848 601</span><span
-                                class="font-weight-bold sale-of-color">$ 676 421</span></p>
-                        <span class="badge badge-pill primary-color">bestseller</span>
-                    </div>
-                </div>
-            </div>
-
-            <!--SP_10-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_10.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">Azimut 50, du thuyền mới, 2017</h4>
-                        <!-- text -->
-                        <p class="card-text">2017 | <span class="font-weight-bold blue-text">$ 1 244 492</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!--SP_11-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_11.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">Azimut 54, du thuyền mới, 2017</h4>
-                        <!-- text -->
-                        <p class="card-text">2017 | <span class="font-weight-bold blue-text">$ 1 494 214</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!--SP_12-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_12.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">Azimut 55, du thuyền mới, 2017</h4>
-                        <!-- text -->
-                        <p class="card-text">2017 | <span class="font-weight-bold blue-text">$ 2 054 537</span></p>
+                        <p class="card-text">2008 | <span class="font-weight-bold blue-text">$ {{tensanpham[$index + 3][1]}}</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Sản phẩm-->
+
 
     <!--Pagination blue-->
     <section class="d-flex justify-content-lg-center mt-5">
