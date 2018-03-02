@@ -1,0 +1,129 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------------------------header*/
+nav{
+    background-color: #171717;
+}
+nav a{
+    text-transform: uppercase;
+}
+nav .edit-nav-gt .navbar-brand{
+    font-size: 24px;
+    font-weight: bold;
+}
+.align-menu ul li a{
+    font-size: 15px;
+}
+.align-menu ul li a:hover{
+    border-bottom: 1px solid#ffffff;
+}
+/*----------------------------------header*/
+
+/*Banner*/
+.static-banner{
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+.static-banner .static-banner-background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*Banner*/
+
+/*breadcrumb*/
+.breadcrumb{
+    background-color: inherit;
+}
+.breadcrumb li,.breadcrumb li a{
+    font-size: 14px;
+}
+.breadcrumb li a{
+    color: #313131;
+}
+.breadcrumb li a:hover{
+    color: #0b51c5;
+}
+/*breadcrumb*/
+
+/*address*/
+.address-2{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.address-unactive{
+    background-color: #F4F4F4;
+    color: #000;
+}
+.address-1{
+    margin-bottom: 8px;
+}
+.address-active{
+    background-color: #007199;
+    color: #fff;
+}
+.card-comp-text{
+    color: #000;
+}
+.jactive {
+    color: #ffffff;
+}
+
+.Dear h5,.Dear p{
+    text-align: center;
+}
+.Dear p{
+    opacity: 0.8;
+    font-size: 16px;
+}
+.Dear h5{
+    font-weight: bold;
+    margin-top: 80px;
+}
+/*address*/
+
+/*send-of-LienHe*/
+.send-of-LienHe{
+    background-color: #007199;
+}
+.h5-align-Dear{
+    opacity: 0.8;
+}
+/*send-of-LienHe*/
+
+/*Map*/
+#map {
+    height: 600px;
+    width: 100%;
+}
+/*Map*/
+
+/*FOOTER*/
+footer div p{
+    margin: 10px 0 10px 0;
+}
+.social-btn-edit ul li a{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.edit-hover-footer div a:hover{
+    color: #b7d5ca;
+}
+.edit-hover-footer div a{
+    font-size: 14px;
+}
+
+.edit-color-footer{
+    background-color: #171717;
+}
+.edit-developed p{
+    font-size: 14px;
+}
+
+.slotcard:hover {
+    cursor: pointer;
+}
+/*FOOTER*/

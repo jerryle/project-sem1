@@ -1,0 +1,181 @@
+/* Your custom styles */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/*--------------------------------- HEADER */
+
+/*edit-navbar*/
+.position-nav{
+    top: 30px;
+    position: absolute;
+    z-index: 1000;
+}
+div .edit-nav-home{
+    background-color: inherit;
+    box-shadow: none;
+}
+
+/*edit text navbar*/
+div .edit-nav-home a{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.miniature-banner img{
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+
+/*edit menu*/
+.align-menu ul li a{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-shadow: -4px -3px 3px rgba(0,0,0,0.2),
+    2px 2px 6px rgba(0,0,0,0.3),
+    0 3px 8px rgba(0,0,0,0.3),
+    0 4px 15px rgba(0,0,0,0.22);
+}
+
+/*border-bottom*/
+div .edit-nav-home ul a:hover{
+    border-bottom: 1px solid#ffffff;
+}
+/*logo*/
+div .edit-nav-home .navbar-brand{
+    font-size: 24px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4),
+    -2px -3px 6px rgba(0,0,0,0.3),
+    0 -5px 8px rgba(255,255,255,0.3),
+    0 4px 15px rgba(0,0,0,0.4);
+}
+div .edit-nav-home .navbar-brand img{
+
+}
+/*button - pev & next*/
+.carousel-control-next, .carousel-control-prev{
+    width: 150px;
+}
+.carousel-caption{
+    width: 960px;
+}
+
+.carousel-caption h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carousel-caption h3,.carousel-caption p{
+    text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
+    -3px -3px 6px rgba(0,0,0,0.2),
+    0 -5px 8px rgba(0,0,0,0.3),
+    0 4px 15px rgba(0,0,0,0.4);
+}
+
+.Azimut-66 span{
+    font-weight: normal;
+}
+
+.Azimut-al-51 p{
+    font-size: 20px;
+}
+
+.Azimut-43 p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.Azimut-S7 p{
+    font-style: italic;
+}
+
+.button-more-1 div view img{
+    width: auto;
+}
+.button-more-1 div div button,.button-more-2,.send-of-home{
+    background-color: #007199;
+}
+.content-bg{
+    position: absolute;
+    z-index: 1000;
+    bottom: 100px;
+}
+.content-bg h3,.content-bg p{
+    color: #ffffff;
+    text-shadow: -2px -2px 6px rgba(0,0,0,0.2),
+    -3px -3px 6px rgba(0,0,0,0.2),
+    0 -5px 8px rgba(0,0,0,0.3),
+    0 4px 15px rgba(0,0,0,0.4);
+
+}
+/*--------------------------------HEADER*/
+
+/*--------------------------------Search-home*/
+/*.selling-products{*/
+    /*background-color: rgba(13,189,246,0.1);*/
+/*}*/
+.selling-products{
+    position: relative;
+}
+/*---------------------------- Search-home*/
+
+/*----------------------------- SanPham*/
+/*.card-body{*/
+    /*height: 147px;*/
+/*}*/
+.rp1, .rp2, .rp3{
+    margin-top: 20px;
+}
+div .sale{
+    text-decoration: line-through;
+}
+div .card-title{
+    font-size: 18px;
+}
+
+div .sale-of-color{
+    color: #ff0200;
+}
+.view img{
+    width: 100%;
+}
+
+/*-------------------- SanPham*/
+
+/*---------------------- FOOTER*/
+footer div p{
+    margin: 10px 0 10px 0;
+}
+.social-btn-edit ul li a{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.edit-hover-footer div a:hover{
+    color: #b7d5ca;
+}
+.edit-hover-footer div a{
+    font-size: 14px;
+}
+
+.edit-color-footer{
+    background-color: #171717;
+}
+.edit-developed p{
+    font-size: 14px;
+}
+
+/* ----------------------- FOOTER*/
+
+/*Background*/
+.static-banner{
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+.static-banner .static-banner-background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*Background*/
+
