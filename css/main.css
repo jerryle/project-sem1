@@ -16,5 +16,9 @@
 }
 .align-indicators .primary-color{
     background-color: #007199!important;
+    opacity: 0.5;
 }
 /* hidden-search */
+body{
+    background-color: rgba(13,189,246,0.05);
+}
