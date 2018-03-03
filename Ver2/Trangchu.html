@@ -630,15 +630,13 @@
 
     <!-- San pham-->
     <div class="container products">
-        <div ng-repeat="sanpham in sanphams|filter:search" ng-if="$index % 4 == 0" class="row">
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-
-                <!-- Card -->
+        <div class="row" >
+            <div class="col-xl-3 col-12 col-sm-6 my-2" ng-repeat-start="sanphams in sanphams | filter:search">
                 <div class="card example hoverable">
 
                     <!-- Image -->
                     <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_1.jpg" alt="Card image cap">
+                        <img class="img-fluid" src="{{sanphams.img}}" alt="Card image cap">
                         <a href="Chitietsanpham.html">
                             <div class="mask"></div>
                         </a>
@@ -647,81 +645,14 @@
                     <!-- content -->
                     <div class="card-body">
                         <!-- title -->
-                        <h4 class="card-title">{{tensanpham[$index][0]}}</h4>
+                        <h4 class="card-title">{{sanphams.name}}</h4>
                         <!-- text -->
-                        <p class="card-text">2011 | <span class="font-weight-bold blue-text">$ {{tensanpham[$index][1]}}</span> <span class="badge badge-pill danger-color">New</span></p>
+                        <p class="card-text">2011 | <span class="font-weight-bold blue-text">$ {{sanphams.price}}</span> <span class="badge badge-pill danger-color">New</span></p>
                     </div>
                 </div>
             </div>
-
-            <!--SP_2-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_2.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">{{tensanpham[$index + 1][0]}}</h4>
-                        <!-- text -->
-                        <p class="card-text">2008 | <span class="font-weight-bold blue-text">$ {{tensanpham[$index + 1][1]}}</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!--SP_3-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_3.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">{{tensanpham[$index + 2][0]}}</h4>
-                        <!-- text -->
-                        <p class="card-text">2008 | <span class="font-weight-bold blue-text">$ {{tensanpham[$index + 2][1]}}</span> <span class="badge badge-pill danger-color">New</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!--SP_4-->
-            <div class="col-xl-3 col-12 col-sm-6 my-2">
-                <!-- Card -->
-                <div class="card example hoverable">
-
-                    <!-- Image -->
-                    <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="img/Sanpham/Number_4.jpg" alt="Card image cap">
-                        <a href="Chitietsanpham.html">
-                            <div class="mask"></div>
-                        </a>
-                    </div>
-
-                    <!-- content -->
-                    <div class="card-body">
-                        <!-- title -->
-                        <h4 class="card-title">{{tensanpham[$index + 3][0]}}</h4>
-                        <!-- text -->
-                        <p class="card-text">2008 | <span class="font-weight-bold blue-text">$ {{tensanpham[$index + 3][1]}}</span></p>
-                    </div>
-                </div>
-            </div>
+            <div class="clearfix" ng-if="($index+1)%4==0"></div>
+            <div ng-repeat-end=""></div>
         </div>
     </div>
 

@@ -1,29 +1,5 @@
 
 
-
-.noUi-target {
-    padding: 0 17px;
-}
-.noUi-base:before,
-.noUi-base:after {
-    width: 17px;
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 100%;
-    display: block;
-}
-.noUi-base:before {
-    left: -17px;
-}
-.noUi-base:after {
-    left: 100%;
-}
-
-.noUi-connect {
-    background: #015179;
-}
-
 .product-filter {
     background: #efefef;
     /*position: absolute;*/
@@ -32,7 +8,7 @@
 }
 
 .product-filter-result {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 .product-filter h4 {

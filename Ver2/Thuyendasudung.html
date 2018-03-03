@@ -16,7 +16,7 @@
     <!-- css/thuyendasudung -->
     <link rel="stylesheet" href="css/MoiVaSuDung.css">
 
-    <link rel="stylesheet" href="css/nouislider.css">
+    <!--<link rel="stylesheet" href="css/nouislider.css">-->
     <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -109,7 +109,7 @@
                 <div class="col-xl-7">
                     <h4>Giá tiền</h4>
 
-                    <div id="price-filter"></div>
+                    <!--<div id="price-filter"></div>-->
 
                     <div class="product-filter-result row">
                         <div class="col-2">
@@ -124,14 +124,14 @@
 
                         <div class="col-3">
                             <div class="md-form input-group-sm-3">
-                                <label for="price-lower"></label><input type="text" ng-change="changelower()" ng-model="pricelower" id="price-lower"
+                                <label></label><input type="text" ng-model="pricevalues.min"
                                                                         aria-label="Amount (to the nearest dollar)">
 
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="md-form input-group-sm-3">
-                                <label for="price-upper"></label><input type="text" ng-change="changeupper()" ng-model="priceupper" id="price-upper"
+                                <label></label><input type="text" ng-model="pricevalues.max"
                                                                         aria-label="Amount (to the nearest dollar)">
                             </div>
                         </div>
@@ -143,19 +143,19 @@
                 </div>
                 <div class="col-xl-4">
                     <h4>Chiều dài</h4>
-                    <div id="length-filter"></div>
+                    <!--<div id="length-filter"></div>-->
 
                     <div class="product-filter-result row">
                         <div class="col-3">
                             <div class="md-form input-group-sm-3">
-                                <label for="length-lower"></label><input type="text" id="length-lower"
+                                <label></label><input type="text" ng-model="lengthvalues.min"
                                                                          aria-label="Amount (to the nearest dollar)">
 
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="md-form input-group-sm-3">
-                                <label for="length-upper"></label><input type="text" id="length-upper"
+                                <label></label><input type="text" ng-model="lengthvalues.max"
                                                                          aria-label="Amount (to the nearest dollar)">
 
                             </div>
@@ -181,12 +181,12 @@
 
     <div class="container products">
         <div class="row" >
-            <div class="col-xl-3 col-12 col-sm-6 my-2" ng-repeat-start="sanpham in sanphams | filter:search ">
-                <div class="card example hoverable" ng-hide="sanphams[$index].price < pricelower || sanphams[$index].price > priceupper">
+            <div class="col-xl-3 col-12 col-sm-6 my-2" ng-repeat-start="sanphams in sanphams | priceRange:pricevalues">
+                <div class="card example hoverable">
 
                     <!-- Image -->
                     <div class="view overlay hm-white-slight">
-                        <img class="img-fluid" src="{{sanphams[$index].img}}" alt="Card image cap">
+                        <img class="img-fluid" src="{{sanphams.img}}" alt="Card image cap">
                         <a href="Chitietsanpham.html">
                             <div class="mask"></div>
                         </a>
@@ -195,9 +195,9 @@
                     <!-- content -->
                     <div class="card-body">
                         <!-- title -->
-                        <h4 class="card-title">{{sanphams[$index].name}}</h4>
+                        <h4 class="card-title">{{sanphams.name}}</h4>
                         <!-- text -->
-                        <p class="card-text">2011 | <span class="font-weight-bold blue-text">$ {{sanphams[$index].price}}</span> <span class="badge badge-pill danger-color">New</span></p>
+                        <p class="card-text">2011 | <span class="font-weight-bold blue-text">$ {{sanphams.price}}</span> <span class="badge badge-pill danger-color">New</span></p>
                     </div>
                 </div>
             </div>
@@ -376,7 +376,7 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!-- my javascript -->
-<script src="js/nouislider.js"></script>
+<!--<script src="js/nouislider.js"></script>-->
 <script src="js/wNumb.js"></script>
 <script type="text/javascript" src="js/core.js"></script>
 
